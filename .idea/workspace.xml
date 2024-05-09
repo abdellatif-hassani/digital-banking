@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2305b00-725a-4cf8-b72c-e369e29bf63d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/hassani/abdellatif/backend/BackEndApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/hassani/abdellatif/backend/BackEndApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/hassani/abdellatif/backend/dtos/CurrentBankAccountDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/hassani/abdellatif/backend/dtos/CurrentBankAccountDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="d2305b00-725a-4cf8-b72c-e369e29bf63d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,6 +62,9 @@
       <recent name="C:\Users\Abdellatif\Desktop\digital-banking\back-end\src\main\java\hassani\abdellatif\backend\web" />
       <recent name="C:\Users\Abdellatif\Desktop\digital-banking\back-end\src\main\java\hassani\abdellatif\backend\repositories" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="hassani.abdellatif.backend.web" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="BackEndApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
@@ -84,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715280761328</updated>
-      <workItem from="1715280762394" duration="4025000" />
+      <workItem from="1715280762394" duration="5585000" />
     </task>
     <servers />
   </component>
