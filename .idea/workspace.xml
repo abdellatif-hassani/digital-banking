@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2305b00-725a-4cf8-b72c-e369e29bf63d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/hassani/abdellatif/backend/dtos/AccountHistoryDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/hassani/abdellatif/backend/dtos/AccountHistoryDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/hassani/abdellatif/backend/dtos/AccountOperationDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/hassani/abdellatif/backend/dtos/AccountOperationDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/hassani/abdellatif/backend/dtos/BankAccountDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/hassani/abdellatif/backend/dtos/BankAccountDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/hassani/abdellatif/backend/dtos/CreditDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/hassani/abdellatif/backend/dtos/CreditDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/hassani/abdellatif/backend/BackEndApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/hassani/abdellatif/backend/BackEndApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/back-end/src/main/java/hassani/abdellatif/backend/dtos/CurrentBankAccountDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/hassani/abdellatif/backend/dtos/CurrentBankAccountDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/hassani/abdellatif/backend/dtos/CustomerDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/hassani/abdellatif/backend/dtos/CustomerDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/hassani/abdellatif/backend/dtos/DebitDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/hassani/abdellatif/backend/dtos/DebitDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/hassani/abdellatif/backend/dtos/SavingBankAccountDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/hassani/abdellatif/backend/dtos/SavingBankAccountDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/hassani/abdellatif/backend/dtos/TransferRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/hassani/abdellatif/backend/dtos/TransferRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,23 +45,26 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Abdellatif/Desktop/digital-banking/back-end/src/main/java/hassani/abdellatif/backend/dtos",
+    "last_opened_file_path": "C:/Users/Abdellatif/Desktop/digital-banking/back-end/src/main/java/hassani/abdellatif/backend",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Abdellatif\Desktop\digital-banking\back-end\src\main\java\hassani\abdellatif\backend" />
+      <recent name="C:\Users\Abdellatif\Desktop\digital-banking\back-end\src\main\java\hassani\abdellatif\backend\services" />
       <recent name="C:\Users\Abdellatif\Desktop\digital-banking\back-end\src\main\java\hassani\abdellatif\backend\dtos" />
       <recent name="C:\Users\Abdellatif\Desktop\digital-banking\back-end\src\main\java\hassani\abdellatif\backend\web" />
       <recent name="C:\Users\Abdellatif\Desktop\digital-banking\back-end\src\main\java\hassani\abdellatif\backend\repositories" />
-      <recent name="C:\Users\Abdellatif\Desktop\digital-banking\back-end\src\main\java\hassani\abdellatif\backend\enums" />
-      <recent name="C:\Users\Abdellatif\Desktop\digital-banking\back-end\src\main\java\hassani\abdellatif\backend\entities" />
     </key>
   </component>
   <component name="RunManager">
@@ -87,7 +84,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715280761328</updated>
-      <workItem from="1715280762394" duration="2223000" />
+      <workItem from="1715280762394" duration="4025000" />
     </task>
     <servers />
   </component>

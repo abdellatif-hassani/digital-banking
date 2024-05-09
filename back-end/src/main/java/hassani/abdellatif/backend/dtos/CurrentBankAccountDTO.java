@@ -1,11 +1,11 @@
 package hassani.abdellatif.backend.dtos;
 
 import hassani.abdellatif.backend.enums.AccountStatus;
-import lombok.Data;
+import lombok.*;
 
 import java.util.Date;
 
-@Data
+@Data @AllArgsConstructor @NoArgsConstructor
 public class CurrentBankAccountDTO extends BankAccountDTO {
     private String id;
     private double balance;
