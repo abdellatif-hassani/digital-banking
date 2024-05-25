@@ -1,0 +1,43 @@
+<!-- Hero Section -->
+<section class="hero-section text-center py-5">
+    <div class="container">
+      <h1 class="display-4">Welcome to Digital Bank</h1>
+      <p class="lead">Your reliable partner for all digital banking needs.</p>
+      <a class="btn btn-primary btn-lg" routerLink="/accounts/create-account" role="button">Open an Account</a>
+    </div>
+  </section>
+  
+  <!-- Services Section -->
+  <section class="services-section py-4">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Services</h2>
+      <div class="row">
+        <div class="col-md-4" *ngFor="let service of services">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">{{ service.title }}</h5>
+              <p class="card-text">{{ service.text }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Testimonials Section -->
+  <section class="testimonials-section py-4 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">What Our Customers Say</h2>
+      <div class="row">
+        <div class="col-md-4" *ngFor="let testimonial of testimonials">
+          <div class="card">
+            <div class="card-body">
+              <p class="card-text">"{{ testimonial.text }}"</p>
+              <footer class="blockquote-footer">{{ testimonial.author }}</footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  

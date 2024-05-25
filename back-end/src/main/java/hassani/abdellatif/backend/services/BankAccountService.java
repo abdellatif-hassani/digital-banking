@@ -1,32 +1,27 @@
 package hassani.abdellatif.backend.services;
 
 import hassani.abdellatif.backend.dtos.*;
+import hassani.abdellatif.backend.entities.BankAccount;
+import hassani.abdellatif.backend.entities.CurrentAccount;
 import hassani.abdellatif.backend.exceptions.BalanceNotSufficientException;
 import hassani.abdellatif.backend.exceptions.BankAccountNotFoundException;
 import hassani.abdellatif.backend.exceptions.CustomerNotFoundException;
+import hassani.abdellatif.backend.utils.AccountRequest;
 
 import java.util.List;
+
 public interface BankAccountService {
-    CustomerDTO saveCustomer(CustomerDTO customerDTO);
     CurrentBankAccountDTO saveCurrentBankAccount(double initialBalance, double overDraft, Long customerId) throws CustomerNotFoundException;
     SavingBankAccountDTO saveSavingBankAccount(double initialBalance, double interestRate, Long customerId) throws CustomerNotFoundException;
-    List<CustomerDTO> listCustomers();
-    Object getBankAccount(String accountId) throws BankAccountNotFoundException;
-    void debit(String accountId, double amount, String description) throws BankAccountNotFoundException, BalanceNotSufficientException;
-    void credit(String accountId, double amount, String description) throws BankAccountNotFoundException;
-    void transfer(String accountIdSource, String accountIdDestination, double amount) throws BankAccountNotFoundException, BalanceNotSufficientException;
-
+    Object getBankAccount(Long accountId) throws BankAccountNotFoundException;
+    void debit(Long accountId, double amount, String description) throws BankAccountNotFoundException, BalanceNotSufficientException;
+    void credit(Long accountId, double amount, String description) throws BankAccountNotFoundException;
+    void transfer(Long accountIdSource, Long accountIdDestination, double amount) throws BankAccountNotFoundException, BalanceNotSufficientException;
     List<BankAccountDTO> bankAccountList();
+    List<AccountOperationDTO> accountHistory(Long accountId);
+    AccountHistoryDTO getAccountHistory(Long accountId, int page, int size) throws BankAccountNotFoundException;
 
-    CustomerDTO getCustomer(Long customerId) throws CustomerNotFoundException;
+    public BankAccount createAccount(AccountRequest accountRequest, String token);
 
-    CustomerDTO updateCustomer(CustomerDTO customerDTO);
-
-    void deleteCustomer(Long customerId);
-
-    List<AccountOperationDTO> accountHistory(String accountId);
-
-    AccountHistoryDTO getAccountHistory(String accountId, int page, int size) throws BankAccountNotFoundException;
-
-    List<CustomerDTO> searchCustomers(String keyword);
+    List<BankAccountDTO> getCustomerAccounts(Long customerId);
 }

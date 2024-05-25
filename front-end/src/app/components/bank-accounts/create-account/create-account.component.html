@@ -1,0 +1,26 @@
+<div class="">
+    <h2>Create Account</h2>
+    <form (ngSubmit)="createAccount()" #createAccountForm="ngForm">
+      <div class="mb-3">
+        <label for="accountType" class="form-label">Account Type</label>
+        <select class="form-control" id="accountType" required [(ngModel)]="accountType" name="accountType">
+          <option value="current">Current Account</option>
+          <option value="saving">Saving Account</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="balance" class="form-label">Initial Balance</label>
+        <input type="number" class="form-control" id="balance" required [(ngModel)]="account.balance" name="balance">
+      </div>
+      <div class="mb-3" *ngIf="accountType === 'current'">
+        <label for="overDraft" class="form-label">Over Draft</label>
+        <input type="number" class="form-control" id="overDraft" required [(ngModel)]="account.overDraft" name="overDraft">
+      </div>
+      <div class="mb-3" *ngIf="accountType === 'saving'">
+        <label for="interestRate" class="form-label">Interest Rate</label>
+        <input type="number" class="form-control" id="interestRate" required [(ngModel)]="account.interestRate" name="interestRate">
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled]="!createAccountForm.form.valid">Create Account</button>
+    </form>
+  </div>
+  

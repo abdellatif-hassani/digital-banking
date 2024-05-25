@@ -1,0 +1,41 @@
+<div class="profile-container" *ngIf="user">
+    <h2>User Profile</h2>
+    <div class="profile-details">
+      <p><strong>Name:</strong> {{ user.name }}</p>
+      <p><strong>Email:</strong> {{ user.email }}</p>
+    </div>
+  
+    <h3>Bank Accounts</h3>
+    <div *ngIf="accounts.length > 0; else noAccounts">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Account ID</th>
+            <th>Account Type</th>
+            <th>Balance</th>
+            <th>Status</th>
+            <th>Created At</th>
+            <!-- Add other account details as needed -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let account of accounts">
+            <td>{{ account.id }}</td>
+            <td>{{ account.type }}</td>
+            <td>{{ account.balance }}</td>
+            <td>{{ account.status }}</td>
+            <td>{{ account.createdAt | date:'short' }}</td>
+            <!-- Add other account details as needed -->
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <ng-template #noAccounts>
+      <p>No accounts available.</p>
+    </ng-template>
+  </div>
+  
+  <div *ngIf="errorMessage" class="error-message">
+    {{ errorMessage }}
+  </div>
+  

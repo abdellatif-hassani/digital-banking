@@ -1,0 +1,32 @@
+<div class="transfer card">
+    <div class="card-body">
+      <h2 class="card-title text-center">Transfer Money</h2>
+      <form (ngSubmit)="transfer()">
+        <div class="form-group">
+          <label for="accountSource">From Account:</label>
+          <select id="accountSource" [(ngModel)]="transferData.accountSource" name="accountSource" class="form-control" required>
+            <option *ngFor="let account of accounts" [value]="account.id">
+              {{ account.id }} - {{ account.type }} - {{ account.balance | currency }}
+            </option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="accountDestination">To Account (ID):</label>
+          <input type="number" id="accountDestination" [(ngModel)]="transferData.accountDestination" name="accountDestination" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="amount">Amount:</label>
+          <input type="number" id="amount" [(ngModel)]="transferData.amount" name="amount" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="description">Description:</label>
+          <input type="text" id="description" [(ngModel)]="transferData.description" name="description" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block mt-3">Transfer</button>
+      </form>
+      <div *ngIf="errorMessage" class="alert alert-danger mt-3">
+        {{ errorMessage }}
+      </div>
+    </div>
+  </div>
+  
